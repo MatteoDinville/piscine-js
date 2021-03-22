@@ -1,6 +1,6 @@
-let espaceStr = ["`", "\\", "/", '"',"'" ]
+const espaceStr = ["`", "\\", "/", '"',"'" ]
 const arr = [4, '2']
-let obj = {
+const obj = {
     str :"",
     num : 8,
     bool : false,
