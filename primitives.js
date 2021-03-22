@@ -1,4 +1,4 @@
-str = "hello"
-num = 0
-bool = false
-undef = undefined
+const str = "hello"
+const num = 0
+const bool = false
+const undef = undefined
