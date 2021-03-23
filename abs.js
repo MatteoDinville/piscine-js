@@ -14,6 +14,6 @@ function isPositive(number) {
 
 function abs(number) {
     if (number < 0) {
-        number * -1 == -number
-    }
+        return number * -1
+    } 
 }
