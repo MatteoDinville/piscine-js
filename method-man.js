@@ -18,10 +18,12 @@ console.log(sentence([ 'ceci', 'est', 'un', 'test' ]))
 function yell (str3){
     return str3.toUpperCase() 
 }
+console.log(yell("ceci est un test"))
 
 function whisper(str4) {
-    return str4.toLowerCase()
+    return '*' + str4.toLowerCase() + '*'
 }
+console.log(whisper("ceci est un test"))
 
 function capitalize(str4) {
     return str4[0].toUpperCase() + str4.slice(1).toLowerCase()
