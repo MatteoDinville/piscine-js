@@ -14,7 +14,7 @@ function sign (number){
     }
 }   
 
-function sameSign(number2){
+function sameSign(number, number2){
    if (sign(number) == sign(number2)){
        return true 
    }else 
