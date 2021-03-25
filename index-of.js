@@ -4,7 +4,7 @@
 
 function indexOf (index, value, fromIndex = 0) {
     for (let i = fromIndex ; i < index.length; i++) {
-        if (index[i] == value) {
+        if (index[i] === value) {
             return i // i est la position de l'index
         }
     }
@@ -13,7 +13,7 @@ function indexOf (index, value, fromIndex = 0) {
 
 function lastIndexOf (index, value, fromIndex = index.length-1) {
     for (let i = index.length-1; i >= fromIndex; i--) {
-        if (index[i]== value){
+        if (index[i]=== value){
             return i;
         }
     }
