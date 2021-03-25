@@ -1,4 +1,4 @@
 function repeat (word){
-    return word.repeat()
+    return word.repeat(3);
 }
-console.log(repeat("Hello"))
+console.log(repeat("Hello "))
