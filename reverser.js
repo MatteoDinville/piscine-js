@@ -2,11 +2,14 @@
 // Like [].reverse() but working also for strings (without using the actual method)
 
 function reverse(str) {
-    let finalStr = "";
-
+    let finalStr = new Array
     for (let i = str.length-1 ; i >= 0; i--) {
-        finalStr += str[i];
+        if (typeof(str) == "object") {
+            finalStr.push(str[i]);
+        } else {
+            finalStr += str[i];
+        }
     }
     return finalStr
 }
-console.log(reverse("test"));
+console.log(reverse("bonjour"));
