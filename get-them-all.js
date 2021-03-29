@@ -18,8 +18,12 @@ export function getActive () {
 }
 
 export function getBonannoPisano () {
-    const id = document.getElementById("BonannoPisano");
-    const ortherId = document.querySelectorAll("a:not(BonannoPisano)");
-        return [[...id], ortherId]
-}
+    let tab = []
 
+    const firstArr = document.getElementById('BonannoPisano')
+    const secondArr = document.querySelectorAll('a:not(#BonannoPisano)')
+    tab.push(firstArr)
+    tab.push(secondArr)
+    
+    return tab
+}
