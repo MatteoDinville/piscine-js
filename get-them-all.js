@@ -1,8 +1,8 @@
 export function getArchitects () {
 
     const element = document.getElementsByTagName('a');
-    const element2 = document.getElementsByTagName('span');
-    return [[...element], [element2]]
+    const element2 = document.querySelectorAll(":not(a)");
+    return [[...element], element2]
 }
 
 export function getClassical () {
