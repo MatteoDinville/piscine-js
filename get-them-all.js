@@ -19,6 +19,7 @@ export function getActive () {
 
 export function getBonannoPisano () {
     const id = document.getElementById('BonannoPisano');
-        return [...id]
+    const ortherId = document.querySelectorAll(':not(BonannoPisano)');
+        return [[...id], ortherId]
 }
 
