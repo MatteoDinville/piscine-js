@@ -12,8 +12,8 @@ export function getClassical () {
 }
 
 export function getActive () {
-    const active = document.getElementsByClassName("true");
-    const active2 = document.querySelectorAll(":not(true)");
+    const active = document.getElementsByClassName("active");
+    const active2 = document.querySelectorAll(":not(active)");
     return [[...active], active2]
 }
 
