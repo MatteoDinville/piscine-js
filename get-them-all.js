@@ -12,15 +12,13 @@ export function getClassical () {
 }
 
 export function getActive () {
-    const active = document.querySelectorAll("a.classical.active");
-    const active2 = document.querySelectorAll("false");
-    return [[...active], [active2]]
-
+    const active = document.getElementsByClassName("true");
+    const active2 = document.querySelectorAll(":not(true)");
+    return [[...active], active2]
 }
 
 export function getBonannoPisano () {
     const id = document.getElementById('BonannoPisano');
         return [...id]
-
 }
 
