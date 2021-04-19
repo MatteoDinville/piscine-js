@@ -46,37 +46,37 @@ console.log(fahrenheitToCelsius(['68°F', '59°F', '25°F']))
 
 
 
-// trimTemp([
-//   { city: 'Los Angeles', temperature: '  101 °F   '},
-//   { city: 'San Francisco', temperature: ' 84 ° F   '},
-// ])
+trimTemp([
+  { city: 'Los Angeles', temperature: '  101 °F   '},
+  { city: 'San Francisco', temperature: ' 84 ° F   '},
+])
 
-// function trimTemp(trim) {
-//   return trim.map((spaces)=> {
-//     spaces.temperature = spaces.temperature.split(' ').join('');
-//     return spaces
-//   })
-// }
-// console.log(trimTemp([
-//   { city: 'Los Angeles', temperature: '  101 °F   '},
-//   { city: 'San Francisco', temperature: ' 84 ° F   '},
-// ]))
+function trimTemp(trim) {
+  return trim.map((spaces)=> {
+    spaces.temperature = spaces.temperature.split(' ').join('');
+    return spaces
+  })
+}
+console.log(trimTemp([
+  { city: 'Los Angeles', temperature: '  101 °F   '},
+  { city: 'San Francisco', temperature: ' 84 ° F   '},
+]))
 
 
 
-// tempForecasts([
-//   {
-//     city: 'Pasadena',
-//     temperature: ' 101 °F',
-//     state: 'california',
-//     region: 'West',
-//   }
+tempForecasts([
+  {
+    city: 'Pasadena',
+    temperature: ' 101 °F',
+    state: 'california',
+    region: 'West',
+  }
 // ]) // -> ['38°Celsius in Pasadena, California']
 
-// function tempForecasts (last) {
-//   return last.map((element) => {
-//     return Math.floor((parseInt(element.temperature)-32)/ 1.8) + "°Celsius in " + element.city + ", " + upperCasingStates([element.state])
-//   })
-// }
-// console.log(tempForecasts[{city: 'Pasadena',temperature: ' 101 °F',state: 'california',region: 'West',}])
+function tempForecasts (last) {
+  return last.map((element) => {
+    return Math.floor((parseInt(element.temperature)-32)/ 1.8) + "°Celsius in " + element.city + ", " + upperCasingStates([element.state])
+  })
+}
+console.log(tempForecasts[{city: 'Pasadena',temperature: ' 101 °F',state: 'california',region: 'West',}])
 
