@@ -10,11 +10,10 @@ citiesOnly([
   ])
 
 
-function citiesOnly (array) {
-  return array.map((element) => {
-    console.log(element.city)
-  })
+  function citiesOnly(array) {
+    return array.map(x => x.city)
 }
+
 
 // upperCasingStates(['alabama', 'new jersey'])
 
