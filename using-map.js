@@ -15,18 +15,18 @@ citiesOnly([
 }
 
 
-// upperCasingStates(['alabama', 'new jersey'])
+upperCasingStates(['alabama', 'new jersey'])
 
-// function upperCasingStates(words) {
-//   return words.map((element) => {
-//     let slitword = element.split(' ');
-//       for (let i = 0; i < slitword.length; i++) {
-//       slitword[i] = slitword[i].charAt(0).toUpperCase() + slitword[i].substring(1);
-//   }
-//   return slitword.join(' ');
-//   })
-// }
-// console.log(upperCasingStates(['alabama', 'new jersey']))
+function upperCasingStates(words) {
+  return words.map((element) => {
+    let slitword = element.split(' ');
+      for (let i = 0; i < slitword.length; i++) {
+      slitword[i] = slitword[i].charAt(0).toUpperCase() + slitword[i].substring(1);
+  }
+  return slitword.join(' ');
+  })
+}
+console.log(upperCasingStates(['alabama', 'new jersey']))
 
 
 
