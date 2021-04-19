@@ -29,10 +29,6 @@ function upperCasingStates(words) {
 console.log(upperCasingStates(['alabama', 'new jersey']))
 
 
-
-
-// // fahrenheitToCelsius(['68°F', '59°F', '25°F']) // -> ['20°C', '15°C', '-4°C']
-
 function fahrenheitToCelsius (temp) {
   return temp.map((convert)=> {
     const convertint = parseInt(convert);
@@ -71,4 +67,12 @@ tempForecasts([
     state: 'california',
     region: 'West',
   }
-// ]) // -> ['38°Celsius in Pasadena, California']
+])
+
+  function tempForecasts (test) {
+    return test.map((element) => {
+      return Math.floor((parseInt(element.temperature)-32)/ 1.8) + "°Celsius in " + element.city + ", " + upperCasingStates([element.state])
+    })
+  }
+console.log(tempForecasts[{city: 'Pasadena',temperature: ' 101 °F',state: 'california',region: 'West',}])
+  
