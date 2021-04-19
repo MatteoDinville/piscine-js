@@ -72,11 +72,3 @@ tempForecasts([
     region: 'West',
   }
 // ]) // -> ['38°Celsius in Pasadena, California']
-
-function tempForecasts (last) {
-  return last.map((element) => {
-    return Math.floor((parseInt(element.temperature)-32)/ 1.8) + "°Celsius in " + element.city + ", " + upperCasingStates([element.state])
-  })
-}
-console.log(tempForecasts[{city: 'Pasadena',temperature: ' 101 °F',state: 'california',region: 'West',}])
-
