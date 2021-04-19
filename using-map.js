@@ -33,14 +33,14 @@ console.log(upperCasingStates(['alabama', 'new jersey']))
 
 // // fahrenheitToCelsius(['68°F', '59°F', '25°F']) // -> ['20°C', '15°C', '-4°C']
 
-// function fahrenheitToCelsius (temp) {
-//   return temp.map((convert)=> {
-//     const convertint = parseInt(convert);
-//     let newtemp = Math.floor((convertint -32) /1.8)
-//     return newtemp + "°C"
-//   })
-// }
-// console.log(fahrenheitToCelsius(['68°F', '59°F', '25°F']))
+function fahrenheitToCelsius (temp) {
+  return temp.map((convert)=> {
+    const convertint = parseInt(convert);
+    let newtemp = Math.floor((convertint -32) /1.8)
+    return newtemp + "°C"
+  })
+}
+console.log(fahrenheitToCelsius(['68°F', '59°F', '25°F']))
 
 
 
