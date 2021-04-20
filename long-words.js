@@ -12,7 +12,7 @@ function oneLongWord (words) {
 
 function noLongWords (words) {
     return words.every((data)=>{
-        return data.length > 7
+        return data.length < 7
     })
 }
 // console.log(longWords([
