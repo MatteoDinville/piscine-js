@@ -1,14 +1,10 @@
-const student = {
-    name: "Matteo",
-    age: "19"
+function reverseObject (object) {
+
+const keys = Object.keys(object)
+const values = Object.values(object)
+let newobj = {}
+for (let i= 0; i < keys.length; i++) {
+    newobj[values[i]] = keys[i]
+    }
+    return newobj    
 }
-function inverseObject(obj) {
-    reserveObj = {}
-    newObj = Object.keys(obj).reverse();
-    newObj.forEach(function(i){
-        reserveObj[i] = obj[i];
-    })
-    return reserveObj;
-}
-reverse = inverseObject(student)
-console.log(reverse)
