@@ -1,4 +1,4 @@
-function reverseObject (object) {
+function invert (object) {
 
 const keys = Object.keys(object)
 const values = Object.values(object)
