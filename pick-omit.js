@@ -25,8 +25,8 @@ function omit (obj, keys) {
     return pick(obj, newKeys)
 }
 
-pick({a: "s", b: "t"}, b); // Returns {b: "t"}
-pick({a: "s", b: "t", c: "u"}, [b, c]) // Returns {b: "t", c: "u"}  
+// pick({a: "s", b: "t"}, b); // Returns {b: "t"}
+// pick({a: "s", b: "t", c: "u"}, [b, c]) // Returns {b: "t", c: "u"}  
 
-omit({a: "s", b: "t"}, b); // Returns {a: "s"}
-omit({a: "s", b: "t", c: "u"}, [b, c]) // Returns {a: "s"}
+// omit({a: "s", b: "t"}, b); // Returns {a: "s"}
+// omit({a: "s", b: "t", c: "u"}, [b, c]) // Returns {a: "s"}
