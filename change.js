@@ -11,7 +11,7 @@ function get (firstKey) {
 console.log(get("str"))
 
 function set (secondKey, value){
-    sourceObject[secondKey] = value
+   return sourceObject[secondKey] = value
 }
 console.log(set("num",2))
 console.log(sourceObject)
