@@ -13,5 +13,5 @@ console.log(get("str"))
 function set (secondKey, value){
     sourceObject[secondKey] = value
 }
-set("num", 24)
+console.log(set("num",2))
 console.log(sourceObject)
