@@ -11,9 +11,16 @@ const nutritionDB = {
     orange:  { calories: 49,  protein: 0.9,   carbs: 13,    sugar: 9,   fiber: 0.2, fat: 0.1   },
   }
 
-  
-function filterValues(obj, func) {
 
+function filterValues(obj, func) {
+    let entries = Object.entries(obj)
+    let newObj = {}
+    for (i = 0; i < entries.length; i++) {
+
+        if (func )
+        func(values[i]) = newObj[object] 
+    }
+    return newObj
 }
 
 function mapValues(obj, func) {
