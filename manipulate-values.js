@@ -15,14 +15,13 @@ const nutritionDB = {
 function filterValues(obj, func) {
     let entries = Object.entries(obj)
     let newObj = {}
-    for (i = 0; i < entries.length; i++) {
-
-        if (func )
-        func(values[i]) = newObj[object] 
+    for (let i = 0; i < entries.length; i++) {
+        if (func(entries[i][1])){
+            newObj[entries[i][0]] = entries[i][1]
+        }
     }
     return newObj
 }
-
 function mapValues(obj, func) {
 
 }
