@@ -23,7 +23,14 @@ function filterValues(obj, func) {
     return newObj
 }
 function mapValues(obj, func) {
-
+    let entries = Object.entries(obj)
+    let newObj = {}
+    for (let i = 0; i < entries.length; i++) {
+        if (func(entries[0])){
+            newObj[entries[0]] = entries[i][1]
+        }
+    }
+    return newObj
 }
 
 function reduceValues(obj, func) {
